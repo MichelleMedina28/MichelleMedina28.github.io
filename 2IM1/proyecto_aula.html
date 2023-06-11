@@ -108,8 +108,16 @@
         td {
             border-radius: 5px;
             border: 2px black solid;
-            text-align: center;
             padding: 10px;
+            text-align: justify;
+            background-color: #DCF5F7;
+            user-select: none;
+        }
+
+        td:hover {
+            background-color: rgb(201, 224, 225);
+            transform: scale(1.2);
+            transition: 0.3s;
         }
 
         section h2 {
@@ -118,10 +126,17 @@
 
         .images {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 10px;
             justify-content: center;
             align-content: center;
             text-align: center;
+        }
+
+        .images img {
+            width: 40%;
+            margin: 0;
         }
 
         img {
@@ -129,6 +144,28 @@
             margin: 10px 0 0 0;
             width: 100%;
             height: auto;
+        }
+        .video {
+            text-align: center;
+        }
+
+        .video p {
+            font-size: 24px;
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        .video a {
+            text-decoration: none;
+            color: white;
+            padding: 5px 10px;
+            font-weight: bold;
+            border-radius: 5px;
+            background-color: #FF0000;
+        }
+
+        .integrantes li {
+            list-style: "⭐";
         }
 
     </style>
@@ -193,6 +230,7 @@
                         </td>
                     </tr>
                 </table>
+                <img src="./images/Depresion-en-adolescentes-jovenes.png" alt="Depresion en adolescentes jovenes">
             </section>
         </div>
         <div class="right-info">
@@ -269,14 +307,30 @@
                 apoyo para que te ayuden.
             </li>
         </ul>
+        <img src="./images/images.png" alt="prevencion">
     </section>
     <section id="mesa_redonda">
         <h2>Mesa Redonda</h2>
-        <div class="images">
-            <img src="#" alt="imagen1">
-            <img src="#" alt="imagen2">
-            <img src="#" alt="imagen3">
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dkHGTA0V3_g" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            <p><a href="#" target="_blank">Ver en Youtube</a></p>
         </div>
+        <h2>Integrantes</h2>
+        <ul class="integrantes">
+            <li>Medina Michelle</li>
+            <li>Maldonado Ashanti</li>
+            <li>Alvarado Valeria</li>
+            <li>Gutierrez Chelsea</li>
+        </ul>
+        <div class="images">
+            <img src="./images/img1.jpg" alt="imagen1">
+            <img src="./images/img2.png" alt="imagen2">
+            <img src="./images/img3.png" alt="imagen3">
+        </div>
+
     </section>
 </main>
 <footer></footer>
