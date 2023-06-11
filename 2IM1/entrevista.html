@@ -1,10 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Entrevista</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Slabo 27px', serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        p {
+            text-align: justify;
+        }
+        .card h2 {
+            font-size: 28px;
+            text-align: center;
+            font-weight: bold;
+        }
+        body {
+            background-image: url("./images/fondo.jpg");
+            background-repeat: no-repeat;
+            height: 100vh;
+            background-size: cover;
+        }
+        .card {
+            background-color: rgba(255,255,255,1);
+            border-radius: 20px;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+        section#video, section#entrevista_descripcion, section#tabla_entrevista {
+            margin: 0 auto;
+            max-width: 1600px;
+        }
+        video {
+            width: 100%;
+            height: auto;
+        }
+        #video p {
+            font-size: 24px;
+            text-align: center;
+        }
+        #video a {
+            text-decoration: none;
+            color: white;
+            padding: 5px 10px;
+            font-weight: bold;
+            border-radius: 5px;
+            background-color: #FF0000;
+        }
+        nav {
+            display: flex;
+            align-content: center;
+            justify-content: space-around;
+            padding: 20px 0;
+        }
+        nav h1 {
+            padding: 0;
+            margin: 0;
+        }
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            gap: 10px;
+        }
+        nav a {
+            text-decoration: none;
+            color: black;
+            padding: 5px 10px;
+            background-color: white;
+            border-radius: 5px;
+        }
+        table, td {
+            border: 1px black solid;
+            width: 100%;
+        }
+        td {
+            width: 50%;
+            max-width: 50%;
+            text-align: center;
+        }
+        footer {
+            margin: 3rem 0 0 0;
+            padding: 5px;
+        }
+    </style>
 </head>
 <body>
-<h1>ENTREVISTA</h1>
+<header>
+    <nav>
+        <h1>Pagina Entrevista</h1>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="entrevista.html">Entrevista</a></li>
+            <li><a href="proyecto_aula.html">Proyecto aula</a></li>
+            <li><a href="obra_de_teatro.html">Obra de teatro</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section id="video">
+        <div class="card">
+            <h2>Video de la entrevista</h2>
+            <video poster="images/Entrevista.png" controls>
+                <source src="https://www.w3schools.com/TAGS/movie.mp4" type="video/mp4">
+            </video>
+            <p><a href="#" target="_blank">Ver en Youtube</a></p>
+        </div>
+    </section>
+    <section id="entrevista_descripcion">
+        <div class="card">
+            <h2>Entrevista y mi sentir al entrevistar</h2>
+            <p>Lo que senti...</p>
+        </div>
+    </section>
+    <section id="tabla_entrevista">
+        <div class="card">
+            <h2>Fotos</h2>
+            <table>
+                <tr>
+                    <td><img src="#" alt="imagen1"></td>
+                    <td><img src="#" alt="imagen2"></td>
+                </tr>
+                <tr>
+                    <td><img src="#" alt="imagen3"></td>
+                    <td><img src="#" alt="imagen4"></td>
+                </tr>
+                <tr>
+                    <td><img src="#" alt="imagen5"></td>
+                    <td><img src="#" alt="imagen6"></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+</main>
+<footer>
+    Hecha por Michelle Medina
+</footer>
 </body>
 </html>
