@@ -14,7 +14,6 @@
         body {
             margin: 10px auto;
             max-width: 1300px;
-
         }
         h1 {
             font-size: 36px;
@@ -29,9 +28,8 @@
         }
         main {
             margin: 0 2vw;
-            background-image: url("./images/marmoleado.png");
-            background-repeat: no-repeat;
-            background-size: cover;
+            background: rgb(156,156,156);
+            background: radial-gradient(circle, rgba(156,156,156,1) 0%, rgba(255,255,255,1) 100%);
             border-radius: 25px;
             padding: 2vh 2vw;
             box-shadow: rgba(0, 0, 0, 0.5) 0 4px 12px;
@@ -42,8 +40,36 @@
         section.carrusel {
             display: flex;
             flex-wrap: nowrap;
-            overflow-x: scroll;
+            overflow-x: hidden;
+            margin: 0 auto 20px auto;
+            max-width: 75vw;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0 15px 12px;
+            scroll-behavior: smooth;
         }
+        .carrousel_img {
+            width: 75vw;
+            max-width: 1120px;
+            height: auto;
+        }
+        nav {
+            display: flex;
+            width: 100%;
+            flex-wrap: nowrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        nav a {
+            padding: 13px;
+            border-radius: 50%;
+            border: 1px black solid;
+            background-color: white;
+        }
+        footer {
+            margin: 3rem 0 0 0;
+            padding: 5px;
+        }
+
     </style>
 </head>
 <body>
@@ -53,15 +79,26 @@
 <main>
     <section class="carrusel">
         <div class="elemento">
-            <img src="./images/Entrevista.png" alt="Pagina Entrevista">
+            <a href="entrevista.html" target="_blank">
+                <img id="entrevista" class="carrousel_img" src="./images/Entrevista.png" alt="Pagina Entrevista">
+            </a>
         </div>
         <div class="elemento">
-            <img src="./images/Proyecto_aula.png" alt="Pagina Proyecto Aula">
+            <a href="proyecto_aula.html" target="_blank">
+                <img id="proyecto_aula" class="carrousel_img" src="./images/Proyecto_aula.png" alt="Pagina Proyecto Aula">
+            </a>
         </div>
         <div class="elemento">
-            <img src="./images/Obra_de_teatro.png" alt="Pagina Obra de teatro">
+            <a href="obra_de_teatro.html" target="_blank">
+                <img id="obra_de_teatro" class="carrousel_img" src="./images/Obra_de_teatro.png" alt="Pagina Obra de teatro">
+            </a>
         </div>
     </section>
+    <nav>
+        <a href="#entrevista"></a>
+        <a href="#proyecto_aula"></a>
+        <a href="#obra_de_teatro"></a>
+    </nav>
     <section id="biografia">
         <h1>Biografia</h1>
         <hr>
