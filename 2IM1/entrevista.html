@@ -11,42 +11,51 @@
         * {
             font-family: 'Slabo 27px', serif;
         }
+
         h1 {
             text-align: center;
         }
+
         p {
             text-align: justify;
         }
+
         .card h2 {
             font-size: 28px;
             text-align: center;
             font-weight: bold;
         }
+
         body {
             background-image: url("./images/fondo-cielo-rosa-luna-creciente_53876-129048.png");
             background-repeat: no-repeat;
-            height: 100vh;
+            height: 100%;
             background-size: cover;
         }
+
         .card {
-            background-color: rgba(255,255,255,1);
+            background-color: #F7DAF5;
             border-radius: 20px;
             box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
             padding: 30px;
             margin-bottom: 20px;
         }
+
         section#video, section#entrevista_descripcion, section#tabla_entrevista {
             margin: 0 auto;
             max-width: 1600px;
         }
+
         video {
             width: 100%;
             height: auto;
         }
+
         #video p {
             font-size: 24px;
             text-align: center;
         }
+
         #video a {
             text-decoration: none;
             color: white;
@@ -55,16 +64,19 @@
             border-radius: 5px;
             background-color: #FF0000;
         }
+
         nav {
             display: flex;
             align-content: center;
             justify-content: space-around;
             padding: 20px 0;
         }
+
         nav h1 {
             padding: 0;
             margin: 0;
         }
+
         nav ul {
             display: flex;
             list-style-type: none;
@@ -72,6 +84,7 @@
             padding: 0;
             gap: 10px;
         }
+
         nav a {
             text-decoration: none;
             color: black;
@@ -79,18 +92,22 @@
             background-color: white;
             border-radius: 5px;
         }
-        table, td {
-            border: 1px black solid;
-            width: 100%;
-        }
+
         td {
+            border: 1px black solid;
             width: 50%;
             max-width: 50%;
             text-align: center;
         }
+
         footer {
             margin: 3rem 0 0 0;
             padding: 5px;
+        }
+
+        img {
+            width: 50%;
+            height: auto;
         }
     </style>
 </head>
@@ -111,15 +128,29 @@
         <div class="card">
             <h2>Video de la entrevista</h2>
             <video poster="images/Entrevista.png" controls>
-                <source src="https://www.w3schools.com/TAGS/movie.mp4" type="video/mp4">
+                <source src="videos/Entrevista.mp4" type="video/mp4">
             </video>
-            <p><a href="#" target="_blank">Ver en Youtube</a></p>
+            <p><a href="https://www.youtube.com/watch?v=fPg1d-uWOCQ" target="_blank">Ver en Youtube</a></p>
         </div>
     </section>
     <section id="entrevista_descripcion">
         <div class="card">
-            <h2>Entrevista y mi sentir al entrevistar</h2>
-            <p>Lo que senti...</p>
+            <h2>Entrevista</h2>
+            <ul>
+                <li>Hello good afternoon, can I make some questions for my interview it’s for my computer class?</li>
+                <li>Ok, what is your name?</li>
+                <li>Ok (name), what country are you from?</li>
+                <li>What do you like most about Mexico?</li>
+                <li>Oh, what's your favorite Mexican food?</li>
+                <li>What places in Mexico do you know?</li>
+                <li>Why did you come to Mexico?</li>
+                <li>Ok thank you very much for the interview, it was a pleasure, Enjoy Mexico, bye.</li>
+            </ul>
+            <h2>Mi sentir de la entrevista</h2>
+            <p>Bueno al principio estaba muy nerviosa porque no encontraba la persona correcta para hacerle la
+                entrevista, considero que mi inglés es bastante bueno entonces no tuve que batallar al hablarlo, el
+                entrevistado me entendió muy bien y pudimos crear una buena conversación. Fue divertido e interesante
+                porque conocí a una persona extranjera y me puedo platicar un poco de lo que hace.</p>
         </div>
     </section>
     <section id="tabla_entrevista">
@@ -127,16 +158,16 @@
             <h2>Fotos</h2>
             <table>
                 <tr>
-                    <td><img src="#" alt="imagen1"></td>
-                    <td><img src="#" alt="imagen2"></td>
+                    <td><img src="images/e1.jpg" alt="imagen1"></td>
+                    <td><img src="images/e2.jpg" alt="imagen2"></td>
                 </tr>
                 <tr>
-                    <td><img src="#" alt="imagen3"></td>
-                    <td><img src="#" alt="imagen4"></td>
+                    <td><img src="images/e3.jpg" alt="imagen3"></td>
+                    <td><img src="images/e4.jpg" alt="imagen4"></td>
                 </tr>
                 <tr>
-                    <td><img src="#" alt="imagen5"></td>
-                    <td><img src="#" alt="imagen6"></td>
+                    <td><img src="images/e5.jpg" alt="imagen5"></td>
+                    <td><img src="images/e6.jpg" alt="imagen6"></td>
                 </tr>
             </table>
         </div>
